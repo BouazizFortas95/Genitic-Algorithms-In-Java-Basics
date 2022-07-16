@@ -1,7 +1,7 @@
 /**
  * 
  */
-package all_ones.imp.ga;
+package rc.imp.ga;
 
 /**
  * @author Bouaziz Fortas
@@ -90,21 +90,5 @@ public class Individual {
 		}
 		return output;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

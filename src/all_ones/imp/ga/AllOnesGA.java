@@ -1,7 +1,7 @@
 /**
  * 
  */
-package imp.ga;
+package all_ones.imp.ga;
 
 /**
  * @author Bouaziz Fortas

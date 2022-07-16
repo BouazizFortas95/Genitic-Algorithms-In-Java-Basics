@@ -1,7 +1,7 @@
 /**
  * 
  */
-package all_ones.imp.ga;
+package rc.imp.ga;
 
 import java.util.Arrays;
 import java.util.Comparator;
