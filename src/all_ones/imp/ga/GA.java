@@ -10,7 +10,7 @@ package all_ones.imp.ga;
 public class GA {
 
 	private int populationSize;
-	private double mutaionRate;
+	private double mutationRate;
 	private double crossoverRate;
 	private int elitismCount;
 
@@ -20,9 +20,9 @@ public class GA {
 	 * @param crossoverRate
 	 * @param elitismCount
 	 */
-	public GA(int populationSize, double mutaionRate, double crossoverRate, int elitismCount) {
+	public GA(int populationSize, double mutationRate, double crossoverRate, int elitismCount) {
 		this.populationSize = populationSize;
-		this.mutaionRate = mutaionRate;
+		this.mutationRate = mutationRate;
 		this.crossoverRate = crossoverRate;
 		this.elitismCount = elitismCount;
 	}
@@ -35,24 +35,10 @@ public class GA {
 	}
 
 	/**
-	 * @param populationSize the populationSize to set
+	 * @return the mutationRate
 	 */
-	public void setPopulationSize(int populationSize) {
-		this.populationSize = populationSize;
-	}
-
-	/**
-	 * @return the mutaionRate
-	 */
-	public double getMutaionRate() {
-		return mutaionRate;
-	}
-
-	/**
-	 * @param mutaionRate the mutaionRate to set
-	 */
-	public void setMutaionRate(double mutaionRate) {
-		this.mutaionRate = mutaionRate;
+	public double getMutationRate() {
+		return mutationRate;
 	}
 
 	/**
@@ -61,26 +47,12 @@ public class GA {
 	public double getCrossoverRate() {
 		return crossoverRate;
 	}
-
-	/**
-	 * @param crossoverRate the crossoverRate to set
-	 */
-	public void setCrossoverRate(double crossoverRate) {
-		this.crossoverRate = crossoverRate;
-	}
-
+	
 	/**
 	 * @return the elitismCount
 	 */
 	public int getElitismCount() {
 		return elitismCount;
-	}
-
-	/**
-	 * @param elitismCount the elitismCount to set
-	 */
-	public void setElitismCount(int elitismCount) {
-		this.elitismCount = elitismCount;
 	}
 
 	/**
@@ -239,7 +211,7 @@ public class GA {
 				// Skip mutation if tis is an elite individual
 				if (populationIndex >= this.elitismCount) {
 					// Does tis gene need mutation?
-					if (this.mutaionRate > Math.random()) {
+					if (this.mutationRate > Math.random()) {
 						// Get new gene
 						int newGene = 1;
 						if (individual.getGene(geneIndex) == 1) {
