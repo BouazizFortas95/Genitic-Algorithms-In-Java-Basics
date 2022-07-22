@@ -1,4 +1,4 @@
-package ts.imp.ga;
+package traveling_salesman.imp.ga;
 
 import java.util.Arrays;
 

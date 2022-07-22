@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ts.imp.ga;
+package traveling_salesman.imp.ga;
 
 /**
  * @author Bouaziz Fortas

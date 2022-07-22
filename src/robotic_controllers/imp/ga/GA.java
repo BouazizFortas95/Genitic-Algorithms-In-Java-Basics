@@ -1,7 +1,7 @@
 /**
  * 
  */
-package rc.imp.ga;
+package robotic_controllers.imp.ga;
 
 /**
  * @author Bouaziz Fortas
